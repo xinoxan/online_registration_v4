@@ -117,7 +117,7 @@ select {
   height: auto;
   margin: 0;
   outline: 0;
-  padding: 35px;
+  padding: 15px;
   width: 100%;
     -webkit-transition: all 0.25s ease-in-out;
   -moz-transition: all 0.25s ease-in-out;
@@ -130,6 +130,10 @@ select {
   -webkit-border-radius: 10px;
 -moz-border-radius: 10px;
 border-radius: 10px;
+}
+
+textarea{
+   padding: 35px !important; 
 }
 
 input:focus{
