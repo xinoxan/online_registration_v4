@@ -18,12 +18,13 @@
         <h2>Sign up for our newsletter</h2>
         <p class="subtitle">Get the latest news on how your code is doing right in your box</p>
       </div>
+           <fieldset>
          <ul class="flex-outer">
-        <fieldset>
+     
         
               <hr class="thick-line">
         <hr class="thin-line">
-              <legend>Contact Information</legend>
+              <legend class="contact">Contact Information</legend>
             <li>
           <label for="name">Full Name</label>
           <input type="text" id="name" name="user_name" placeholder="Required">
@@ -61,6 +62,7 @@
           <label for="zip">Zip code</label>
           <input type="zip" id="zip" name="user_zip">
         </li>
+            
          <fieldset>
           <hr class="thin-line">
        
@@ -76,15 +78,16 @@
           </label><br><br><br>
           
             <label>Newsletter format</label><br>
-          <input type="radio" id="html_news" value="html_news" name="html_news"><label class="light" for="html_news">HTML</label><br><br>
+          <input type="radio" id="html_format" value="html_format" name="html_format"><label class="light" for="html_format">HTML</label><br><br>
           <input type="radio" id="plain_text" value="plain_text" name="plain_text"><label class="light" for="plain_text">Plain text</label><br><br>
           <label for="topics">Other topics you'd like to hear about</label>
           <textarea id="topics" name="user_topics"></textarea>
         <button type="submit" id="submit">Sign Up</button>
         <label class="copyright">Copyright The Code Review</label>
-          </ul>
-        </fieldset>
-        </fieldset>
+            </fieldset> 
+    
+              </ul>
+             </fieldset>
       </form>
   </div>   
 

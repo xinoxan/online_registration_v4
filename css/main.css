@@ -177,6 +177,10 @@ fieldset {
   border: none;
 }
 
+.contact {
+  margin-bottom: 30px;
+}
+
 legend {
   font-size: 1.4em;
   padding-top: 20px;
