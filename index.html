@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sign Up Form</title>
+        <link rel="stylesheet" href="css/normalize.css">
+        <link href='http://fonts.googleapis.com/css?family=Nunito:400,300' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body>
+      <div class="banner">
+    <h1 class="headline">THE CODE REVIEW</h1>
+  </div><!--/.banner-->
+    <div class="row">
+      <form action="index.html" method="post">
+        <div class="main-header">
+        <h2>Sign up for our newsletter</h2>
+        <p class="subtitle">Get the latest news on how your code is doing right in your box</p>
+      </div>
+        <fieldset>
+           <ul class="flex-outer">
+              <hr class="thick-line">
+
+        <hr class="thin-line">
+              <legend>Contact Information</legend>
+            <li>
+          <label for="name">Full Name</label>
+          <input type="text" id="name" name="user_name" placeholder="Required">
+          </li>
+          <li>
+          <label for="mail">Email Address</label>
+          <input type="email" id="mail" name="user_email" placeholder="Required">
+          </li>
+          <li>
+          <label for="password">Phone Number</label>
+          <input type="phone" id="phone" name="user_phone">
+        </li>
+          <li>
+            <label for="password">Street Address</label>
+          <input type="street" id="street" name="user_street">
+          </li>
+          <li>
+          <label for="password">City</label>
+          <input type="city" id="city" name="user_city">
+        </li>
+          <li>
+           <label for="job">State</label>
+          <select id="job" name="user_job">
+             <option value="">Choose State</option>
+              <option value="florida">Florida</option>
+              <option value="oregon">Oregon</option>
+              <option value="washington">Washington</option>
+              <option value="new">New Mexico</option>
+              <option value="niuyol">New York</option>
+              <option value="virginia">Virginia</option>
+              <option value="winsconsin">Winsconsin</option>
+          </select>
+          </li>
+          <li>
+          <label for="zip">Zip code</label>
+          <input type="zip" id="zip" name="user_zip">
+        </li>
+         <fieldset>
+          <hr class="thin-line">
+       
+    
+          <legend>Newsletter</legend><br>
+          <label>Select the newsletters you would like to receive</label>
+          <br>
+        
+          <input type="checkbox" id="html_news" value="html_news" name="user_html"><label for="html_news" class="light">HTML News</label><br><br>
+          <input type="checkbox" id="css_news" value="css_news" name="user_css"><label for="css_news" class="light">CSS News</label><br><br>
+          <input type="checkbox" id="javascript_news" value="javascript_news" name="user_javascript">
+          <label for="javascript_news" class="light">Javascript News
+          </label><br><br><br>
+          
+            <label>Newsletter format</label><br>
+          <input type="radio" id="html_news" value="html_news" name="html_news"><label class="light" for="html_news">HTML</label><br><br>
+          <input type="radio" id="plain_text" value="plain_text" name="plain_text"><label class="light" for="design">Plain text</label><br><br>
+          <label for="topics">Other topics you'd like to hear about</label>
+          <textarea id="topics" name="user_topics"></textarea>
+        <button type="submit" id="submit">Sign Up</button>
+        <label class="copyright">Copyright The Code Review</label>
+        </fieldset>
+        </ul>
+        </fieldset>
+      </form>
+  </div>   
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script> 
+<script>
+$('#submit').click(function(){
+   if($.trim($('#name').val()) == ''){
+      alert('Your name is required');
+   }
+   else if($.trim($('#email').val()) == ''){
+alert('Your email is required');
+   }
+});  
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+

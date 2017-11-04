@@ -1,0 +1,283 @@
+/* ================================= 
+  Base Element Styles
+==================================== */
+
+
+
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  color: #384047;
+  font-weight: 400;
+  font-size: 14px
+}
+
+form {
+  margin: 10px auto;
+  padding: 10px 20px;
+}
+
+h1, h2 {
+  margin: 0;
+  text-align: center;
+  font-weight: 300;
+}
+
+h2, legend {
+  color: #2d3945;
+  font-weight: 600;
+}
+
+
+span, label{
+font-size: 16px;
+color: #aaafb4;
+}
+
+.main-header p{
+  text-align: center;
+  font-size: 18px;
+color: #aaafb4;
+margin-bottom: 40px;
+}
+
+.flex-outer
+ {
+    max-width: 800px;
+  margin: 0 auto;
+  list-style-type: none;
+  padding: 0;
+}
+
+
+.thin-line{
+  border: 1px solid #2d3945;
+  max-width: 100%
+}
+
+.thick-line{
+  border: 3px solid #2d3945;
+  min-width: 90%;
+}
+
+.copyright{
+  text-align: center;
+  font-style: italic;
+  margin-top: 20px;
+}
+
+/* ================================= 
+  Base Layout Styles
+==================================== */
+
+.row{
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+
+
+.banner{
+  background-color: #2d3945;
+  color: #fff;
+  padding: 40px;
+}
+
+
+
+/* ================================= 
+Form Styles
+==================================== */
+
+input[type="text"],
+input[type="password"],
+input[type="phone"],
+input[type="street"],
+input[type="city"],
+input[type="zip"],
+input[type="date"],
+input[type="datetime"],
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="tel"],
+input[type="time"],
+input[type="url"],
+textarea,
+select {
+  background: rgba(255,255,255,0.1);
+  border: none;
+  font-size: 16px;
+  height: auto;
+  margin: 0;
+  outline: 0;
+  padding: 35px;
+  width: 100%;
+    -webkit-transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  -ms-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+  background-color: #e8eeef;
+  color: #8a97a0;
+  box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+  margin-bottom: 30px;
+  -webkit-border-radius: 10px;
+-moz-border-radius: 10px;
+border-radius: 10px;
+}
+
+input:focus{
+  box-shadow: 0 0 5px rgba(45, 57, 69, 0.3);
+ border: 2px solid rgba(45, 57, 69, 0.5) !important;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  margin: 0 4px 8px 0;
+}
+
+input::placeholder {
+  font-style: italic;
+  text-align: right;
+}
+
+select {
+  padding: 6px;
+  height: 32px;
+  border-radius: 2px;
+}
+
+button {
+  padding: 19px 39px 18px 39px;
+  color: #FFF;
+  background-color: #4ebbb5;
+  font-size: 18px;
+  text-align: center;
+  font-style: normal;
+  border-radius: 5px;
+  width: 100%;
+  border: 1px solid #4ebbb5;
+  border-width: 1px 1px 3px;
+  box-shadow: 0 -1px 0 rgba(255,255,255,0.1) inset;
+  margin-bottom: 10px;
+}
+
+fieldset {
+  margin-bottom: 30px;
+  border: none;
+}
+
+legend {
+  font-size: 1.4em;
+  padding-top: 20px;
+  margin-bottom: 10px;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+label.light {
+  font-weight: 300;
+  display: inline;
+}
+
+.number {
+  background-color: #5fcf80;
+  color: #fff;
+  height: 30px;
+  width: 30px;
+  display: inline-block;
+  font-size: 0.8em;
+  margin-right: 4px;
+  line-height: 30px;
+  text-align: center;
+  text-shadow: 0 1px 0 rgba(255,255,255,0.2);
+  border-radius: 100%;
+}
+
+@media screen and (min-width: 768px) {
+
+.row{
+   width: 80%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+input #zip{
+  max-width: 30%;
+}
+
+.flex-outer,
+.flex-inner {
+  list-style-type: none;
+  padding: 0;
+}
+
+.flex-outer {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.flex-outer li,
+.flex-inner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+/**
+.flex-inner {
+  padding: 0 8px;
+  justify-content: space-between;  
+}**/
+
+.flex-outer > li:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.flex-outer li label,
+.flex-outer li p {
+  padding: 8px;
+  font-weight: 300;
+}
+
+.flex-outer > li > label,
+.flex-outer li p {
+  flex: 1 0 120px;
+  max-width: 220px;
+}
+
+.flex-outer > li > label + *,
+.flex-inner {
+  flex: 1 0 220px;
+}
+
+.flex-outer li p {
+  margin: 0;
+}
+
+.flex-outer li input:not([type='checkbox']),
+.flex-outer li textarea {
+  padding: 15px;
+  border: none;
+}
+
+.flex-outer li input:not([type]), input[type="zip"] {
+max-width: 30%;
+}
+
+.flex-inner li {
+  width: 100px;
+} 
+
+
+
+}
